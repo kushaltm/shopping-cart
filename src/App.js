@@ -2,7 +2,7 @@ import { IntlProvider } from 'react-intl';
 import './App.css';
 import Header from "./components/Header"
 import ProductView from './components/ProductView';
-import { useState,useCallback } from 'react';
+import { useState, } from 'react';
 import { debounceMyFunction } from './components/utility-function';
 function App() {
   const [products,setProducts] =  useState([])
@@ -60,7 +60,7 @@ function App() {
       });
     }
   };
-  const action = useCallback(debounceMyFunction(onChange,1000))
+  const action = debounceMyFunction(onChange,1000)
   
   return (
     <IntlProvider locale='en'>
