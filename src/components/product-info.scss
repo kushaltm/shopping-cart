@@ -1,0 +1,121 @@
+
+
+.clientInfoTile {
+  border: 2px solid #e8ecf2;
+  border-radius: 4px;
+  text-align: left;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  .clientTitleDiv {
+    font-size: 18px;
+    font-weight: bold;
+    color: #444444;
+    height: 24px;
+    & > span {
+      display: inline-block;
+      max-width: calc(100% - 80px);
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    & a {
+      display: inline-block;
+      top: -6px;
+      position: relative;
+      & i {
+        font-size: 18px;
+        padding-right: 4px;
+      }
+    }
+  }
+  .clientPropTitle {
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 6px;
+  }
+  .clientDescription,
+  .clientCreationDate,
+  .clientPropValue {
+    color: #25282d;
+    height: 21px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    span.clientID {
+      display: inline-block;
+      max-width: calc(100% - 80px);
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      padding-top: 2px;
+    }
+  }
+  .clientDescription,
+  .clientCreationDate
+   {
+    margin-top: 6px;
+  }
+  .clientCreationDate {
+    color: #6b7582;
+  }
+  .clientCreationDate {
+    font-size: 12px;
+    margin-top: 4px;
+  }
+  .noValueText {
+    color: #6b7582;
+  }
+
+  .permissionScope {
+    display: inline-block !important;
+    border-right: 1px solid #444444;
+    padding-left: 9px;
+    padding-right: 9px;
+    &:last-child {
+      border-right: none;
+    }
+  }
+  .permissionScope:first-child {
+    padding-left: 0;
+  }
+  .permissionTitle {
+    display: inline-block !important;
+  }
+  .detailCount {
+    font-size: 11px;
+    display: inline-block !important;
+    margin-left: 6px;
+  }
+
+  .clientEditCTA,
+  .clientCopyCTA {
+    background: none;
+    border: none;
+    text-decoration: none;
+    color: $link-color;
+    margin-left: 12px;
+    font-size: 12px;
+    display: inline-block;
+    &:hover {
+      color: $link-hover-color;
+    }
+    & > span {
+      padding-left: 4px;
+      display: inline !important;
+    }
+    i {
+      padding-right: 0;
+    }
+  }
+  .clientCopyCTA {
+    top: -6px;
+    position: relative;
+    & > span {
+      position: relative;
+    }
+    i {
+      font-size: 18px;
+    }
+  }
+}
